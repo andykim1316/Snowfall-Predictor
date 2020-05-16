@@ -28,7 +28,6 @@ def clean_raw_data():
     # calculates the mean humidity and wind speed
     rawDataHourlyLocation = baseDirectory + "\\rawHourly.csv"
     rawDataHourly = pd.read_csv(rawDataHourlyLocation, encoding='utf-8-sig', low_memory=False, usecols=[14, 18])
-    print(rawDataHourly.tail())
 
     hourlyHumidity, hourlyWindSpd = 0, 0
     relHum, windSpd = [], []
